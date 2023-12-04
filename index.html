@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Medical Care</title>
 </head>
 <body>
@@ -31,8 +32,8 @@
                   </div>
 
                     <div class="header__numbers">
-                        <div class="header__number">+38 (067) 513 01 02</div>
-                        <div class="header__number">+38 (093) 697 32 65</div>
+                        <div class="header__number"><a href="tel:+380675130102">+38 (067) 513 01 02</a></div>
+                        <div class="header__number"><a href="tel:+380936973265">+38 (093) 697 32 65</a></div>
                     </div>
                 </div>
 
@@ -81,7 +82,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="main">
       <section class="get-started">
         <div class="get-started__container container">
             <div class="get-started__content">
@@ -115,11 +116,376 @@
             </div>
         </div>
       </section>
+      <section class="health-home">
+        <div class="health-home__container container">
+            <h2 class="health-home__title title">
+                Кваліфікована допомога на дому
+            </h2>
+            <div class="health-home__body">
+                <div class="health-home__content">
+                    <p class="health-home__text">
+                        Якщо стан здоров'я або інші обставини не дозволяють Вам або Вашому родичу звернутися за допомогою, Ви можете викликати лікаря на дім. Досвідчений фахівець приїде до пацієнта додому або на робоче місце, проведе огляд та дасть докладні рекомендації щодо подальшого обстеження та лікування.
+                    </p>
+                    <div class="health-home__items">
+                        <div class="health-home__item item-health-home">
+                            <div class="item-health-home__icon">
+                                <img src="img/health-home/01-icon.svg" alt="">
+                            </div>
+                            <p class="item-health-home__text"><span>Безпека.</span> Ослаблений організм легко піддається іншим інфекціям. Тому при відвідуванні клініки, якщо у пацієнта вже є те чи інше захворювання, існує ризик заразитися іншою інфекцією від відвідувачів у черзі. Якщо ж оформити виклик терапевта додому, такого ризику немає.
+                            </p>
+                        </div>
+                        <div class="health-home__item item-health-home">
+                            <div class="item-health-home__icon">
+                                <img src="img/health-home/02-icon.svg" alt="">
+                            </div>
+                            <p class="item-health-home__text"><span>Зниження навантаження на організм.</span> Пацієнту у його стані не потрібно йти до клініки, сидіти у черзі, здавати аналізи. Останнє також можна робити, не виходячи із дому.
+                            </p>
+                        </div>
+                        <div class="health-home__item item-health-home">
+                            <div class="item-health-home__icon">
+                                <img src="img/health-home/03-icon.svg" alt="">
+                            </div>
+                            <p class="item-health-home__text"><span>Комфорт для хворого.</span> Пацієнт дотримується постільного режиму, не переохолоджується і не перегрівається дорогою до клініки. У нього не підвищується тиск, доки він піднімається на поверх до лікаря. Тому всі показники будуть максимально достовірними, тому що хворий перебуває у звичній обстановці.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="health-home__image">
+                    <img src="img/health-home/care-photo.png" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__container container">
+            <h2 class="services__title title">
+                Наші послуги
+            </h2>
+            <div class="services__items">
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/01.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Терапія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/02.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Урологія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/03.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Пульмонологія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/04.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Гастроентерологія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/05.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Травматологія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/06.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Педіатрія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/07.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Кардіологія</div>
+                    </a>
+                </div>
+                <div class="services__item item-services">
+                    <a href="#" class="item-services__card">
+                        <div class="item-services__icon">
+                            <img src="img/services/08.svg" alt="">
+                        </div>
+                        <div class="item-services__title">Гематологія</div>
+                    </a>
+                </div>
+            </div>
+            <div class="services__button">
+                <button class="button">
+                    Переглянути всі послуги
+                </button>
+            </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+            <div class="about__content">
+                <h2 class="about__title title">Про клініку</h2>
+                <p class="about__text">Медичний центр надає високоспеціалізовану діагностичну, консультативну, хірургічну та реабілітаційну медичну допомогу. Ми використовуємо передові світові стандарти та новітні технології, ефективно попереджаємо та вирішуємо проблеми здоров’я пацієнтів.
+                    Сучасне діагностичне відділення нашого центру надає широкий спектр високотехнологічних інноваційних медичних послуг з діагностики різних захворювань. Обладнання експертного класу від провідних світових виробників медичної техніки в поєднанні з високим професіоналізмом лікарів робить можливим вирішення навіть найскладніших клінічних завдань.</p>
+                <a href="#" class="about__link link">Дізнатися більше</a>
+            </div>
+            <div class="about__image">
+                <img src="img/about/image.png" alt="">
+            </div>
+        </div>
+      </section>
+      <section class="discounts">
+        <div class="discounts__container container">
+            <h2 class="discounts__title title">Зараз у нас діє декілька акцій</h2>
+            <div class="discounts__items">
+                <div class="discounts__item item-discounts">
+                    <div class="item-discounts__image">
+                        <img src="img/discounts/01.png" alt="">
+                    </div>
+                    <div class="item-discounts__content">
+                        <div class="item-discounts__title">Знижки для пенсіонерів та медпрацівників</div>
+                        <div class="item-discounts__text">Усім пенсіонерам та медпрацівникам надається знижка на прийом лікаря та УЗД - 10%.</div>
+                        <a href="#" class="item-discounts__link link">Детальніше</a>
+                    </div>
+                </div>
+                <div class="discounts__item item-discounts">
+                    <div class="item-discounts__image">
+                        <img src="img/discounts/02.png" alt="">
+                    </div>
+                    <div class="item-discounts__content">
+                        <div class="item-discounts__title">Пропонуємо придбати карту нашого медичного центру</div>
+                        <div class="item-discounts__text">Карта центру надає знижки на послуги 10% та 5% на здачу аналізів. Вартість карти - 300 грн. Термін дії 1 рік.</div>
+                        <a href="#" class="item-discounts__link link">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="discounts__items">
+                <div class="discounts__item item-discounts">
+                    <div class="item-discounts__image">
+                        <img src="img/discounts/03.png" alt="">
+                    </div>
+                    <div class="item-discounts__content">
+                        <div class="item-discounts__title">Кардіограма у подарунок</div>
+                        <div class="item-discounts__text">Запишись на прийом до кардіолога і отримай у подарунок кардіограму серця.</div>
+                        <a href="#" class="item-discounts__link link">Детальніше</a>
+                    </div>
+                </div>
+                <div class="discounts__item item-discounts">
+                    <div class="item-discounts__image">
+                        <img src="img/discounts/04.png" alt="">
+                    </div>
+                    <div class="item-discounts__content">
+                        <div class="item-discounts__title">Комплексний прийом у гінеколога</div>
+                        <div class="item-discounts__text">Зверніться до лікаря-гінеколога та отримайте УЗД огранів малого тазу у подарунок.</div>
+                        <a href="#" class="item-discounts__link link">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="form__container container">
+            <h2 class="form__title title">Запишіться на онлайн-консультацію</h2>
+            <div class="form__subtitle">Запишіться на онлайн-консультацію, щоб мы могли визначити проблеми зі здоров'ям та точніше підібрати вам фахівця.</div>
+            <form action="#" class="form__items">
+                <div class="form__item">
+                    <input class="form__input" placeholder="Ваше ім’я" tabindex="1" type="text" name="username" value="">
+                    <label for="#"></label>
+                </div>
+                <div class="form__item">
+                    <input class="form__input" placeholder="Номер телефону" tabindex="2" type="tel" name="userphone" value="">
+                    <label for="#"></label>
+                </div>
+                <div class="form__item">
+                    <button type="submit" class="form__button button">
+                        Залишити заявку
+                    </button>
+                </div>
+            </form>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container container">
+            <h2 class="reviews__title title">Відгуки</h2>
+            <!-- Slider main container -->
+            <div class="reviews-slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="reviews-slider__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Тетяна Мокренчук</div>
+                            <div class="reviews-slider__data">14 липня</div>
+                        </div>
+                        <div class="reviews-slider__text">Професійний підхід, доступні ціни! У клініці стерильна чистота, просторо та стильно! Сподіваюся, що так завжди буде!</div>
+                    </div>   
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Олексій Шаварин</div>
+                            <div class="reviews-slider__data">6 липня</div>
+                        </div>
+                        <div class="reviews-slider__text">Чудовий медичний центр. Робили тут щеплення маленькій дитині. Світле, просторе приміщення, уважний та приємний персонал, адекватні ціни. Рекомендую.</div>
+                    </div>
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Анастасія Таратухіна</div>
+                            <div class="reviews-slider__data">28 червня</div>
+                        </div>
+                        <div class="reviews-slider__text">Рекомендую дуже привітний адміністратор; професійні та уважні лікарі, дуже хороша медсестра!</div>
+                    </div>
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Тетяна Мокренчук</div>
+                            <div class="reviews-slider__data">14 липня</div>
+                        </div>
+                        <div class="reviews-slider__text">Професійний підхід, доступні ціни! У клініці стерильна чистота, просторо та стильно! Сподіваюся, що так завжди буде!</div>
+                    </div>   
+                </div>
+                
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Олексій Шаварин</div>
+                            <div class="reviews-slider__data">6 липня</div>
+                        </div>
+                        <div class="reviews-slider__text">Чудовий медичний центр. Робили тут щеплення маленькій дитині. Світле, просторе приміщення, уважний та приємний персонал, адекватні ціни. Рекомендую.</div>
+                    </div>
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Анастасія Таратухіна</div>
+                            <div class="reviews-slider__data">28 червня</div>
+                        </div>
+                        <div class="reviews-slider__text">Рекомендую дуже привітний адміністратор; професійні та уважні лікарі, дуже хороша медсестра!</div>
+                    </div>
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Тетяна Мокренчук</div>
+                            <div class="reviews-slider__data">14 липня</div>
+                        </div>
+                        <div class="reviews-slider__text">Професійний підхід, доступні ціни! У клініці стерильна чистота, просторо та стильно! Сподіваюся, що так завжди буде!</div>
+                    </div>   
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Олексій Шаварин</div>
+                            <div class="reviews-slider__data">6 липня</div>
+                        </div>
+                        <div class="reviews-slider__text">Чудовий медичний центр. Робили тут щеплення маленькій дитині. Світле, просторе приміщення, уважний та приємний персонал, адекватні ціни. Рекомендую.</div>
+                    </div>
+                </div>
+
+                <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__content">
+                        <div class="reviews-slider__info">
+                            <div class="reviews-slider__title">Анастасія Таратухіна</div>
+                            <div class="reviews-slider__data">28 червня</div>
+                        </div>
+                        <div class="reviews-slider__text">Рекомендую дуже привітний адміністратор; професійні та уважні лікарі, дуже хороша медсестра!</div>
+                    </div>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="reviews-slider__pagination swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons
+                <div class="reviews-slider__arrow swiper-button-prev"></div>
+                <div class="reviews-slider__arrow swiper-button-next"></div> -->
+            </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container container">
+            <div class="contacts__body">
+                <h2 class="contacts__title title">Контакти</h2>
+                <div class="contacts__info info-contacts">
+                    <div class="info-contacts__items">
+                        <div class="info-contacts__item">
+                            <div class="info-contacts__adress">м. Київ, вул. Дарвіна буд. 16</div>
+                        </div>
+                        <div class="info-contacts__item">
+                            <div class="info-contacts__numbers">
+                               <div class="info-contacts__row">
+                                <a href="tel:+380675130102" class="info-contacts__number">+38 (067) 513 01 02</a>
+                                <a href="tel:+380936973265" class="info-contacts__number">+38 (093) 697 32 65</a>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="info-contacts__item">
+                            <a href="mailto:infomedcentr@gmail.com" class="info-contacts__mail">infomedcentr@gmail.com</a>
+                        </div>
+                        <div class="info-contacts__item">
+                            <div class="info-contacts__schedule">Щоденно з 8:00 до 18:00</div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5082.004496875096!2d30.524830740459464!3d50.44105878036769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0002d2aed7%3A0x41c584d0b7cfe4eb!2sHorizon%20Office%20Tower!5e0!3m2!1sru!2spl!4v1701712194633!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__body">
+                <a href="#" class="footer__logo">
+                    <img src="img/header/logo.svg" alt="">
+                </a>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Каталог послуг</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Лікарі</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Прайс</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Про клініку</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Акції</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__item">
+                    <button class="footer__button button">
+                        Записатися на прийом
+                    </button>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__text">©2020 усі права захищені</div>
+                <div class="footer__text">Medical Care</div>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
